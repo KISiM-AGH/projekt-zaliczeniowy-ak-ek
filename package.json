@@ -1,0 +1,20 @@
+{
+  "name": "InzInt_SUDOKU",
+  "version": "1.0.0",
+  "description": "sudoku generator in REST",
+  "main": "index.js",
+  "repository": "https://github.com/KISiM-AGH/projekt-zaliczeniowy-ak-ek.git",
+  "author": "Agnieszka Kowalczyk <agnieszka7867@wp.pl>",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "start": "node .",
+    "watch": "nodemon --inspect ."
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.6"
+  }
+}
