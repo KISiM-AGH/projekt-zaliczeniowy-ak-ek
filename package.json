@@ -4,7 +4,7 @@
   "description": "sudoku generator in REST",
   "main": "index.js",
   "repository": "https://github.com/KISiM-AGH/projekt-zaliczeniowy-ak-ek.git",
-  "author": "Agnieszka Kowalczyk <agnieszka7867@wp.pl>",
+  "author": "Agnieszka Kowalczyk <agnieszka7867@wp.pl> Emil Kobyłecki <emil_kobylecki@onet.eu>",
   "license": "MIT",
   "private": true,
   "scripts": {

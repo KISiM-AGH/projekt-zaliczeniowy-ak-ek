@@ -19,7 +19,10 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a58ad7cb-99b2-4dab-b40f-e2dbb2042a81" name="Default Changelist" comment="usunięto folder" />
+    <list default="true" id="a58ad7cb-99b2-4dab-b40f-e2dbb2042a81" name="Default Changelist" comment="init commit">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -47,7 +50,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1605710723545</updated>
-      <workItem from="1605710724733" duration="369000" />
+      <workItem from="1605710724733" duration="1518000" />
+      <workItem from="1609676298646" duration="3659000" />
     </task>
     <task id="LOCAL-00001" summary="dodano gitignore">
       <created>1605710816806</created>
@@ -63,7 +67,14 @@
       <option name="project" value="LOCAL" />
       <updated>1605710938382</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="init commit">
+      <created>1605711169472</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1605711169472</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -79,10 +90,30 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="dodano gitignore" />
     <MESSAGE value="usunięto folder" />
-    <option name="LAST_COMMIT_MESSAGE" value="usunięto folder" />
+    <MESSAGE value="init commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="init commit" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="137" y="59" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1609677735716">
+      <screen x="0" y="40" width="1366" height="728" />
+    </state>
+    <state x="137" y="59" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.40.1366.728@0.40.1366.728" timestamp="1609677735716" />
+    <state x="275" y="137" key="Vcs.Push.Dialog.v2" timestamp="1605711178518">
+      <screen x="0" y="40" width="1366" height="728" />
+    </state>
+    <state x="275" y="137" key="Vcs.Push.Dialog.v2/0.40.1366.728@0.40.1366.728" timestamp="1605711178518" />
+    <state x="500" y="318" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1609676394099">
+      <screen x="0" y="40" width="1366" height="728" />
+    </state>
+    <state x="500" y="318" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.40.1366.728@0.40.1366.728" timestamp="1609676394099" />
+    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup" timestamp="1609678207107">
+      <screen x="0" y="40" width="1366" height="728" />
+    </state>
+    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup/0.40.1366.728@0.40.1366.728" timestamp="1609678207107" />
   </component>
 </project>
