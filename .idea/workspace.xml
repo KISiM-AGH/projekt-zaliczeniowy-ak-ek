@@ -19,13 +19,23 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a58ad7cb-99b2-4dab-b40f-e2dbb2042a81" name="Default Changelist" comment="author added">
+    <list default="true" id="a58ad7cb-99b2-4dab-b40f-e2dbb2042a81" name="Default Changelist" comment="database deleted">
+      <change afterPath="$PROJECT_DIR$/src/api/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/api/users/users.controller.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -38,8 +48,14 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../book_api_knex_objection" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Aga\WebstormProjects\projekt_git\src" />
+    </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -50,7 +66,8 @@
       <option name="presentableId" value="Default" />
       <updated>1605710723545</updated>
       <workItem from="1605710724733" duration="1518000" />
-      <workItem from="1609676298646" duration="5106000" />
+      <workItem from="1609676298646" duration="8538000" />
+      <workItem from="1609933359339" duration="3052000" />
     </task>
     <task id="LOCAL-00001" summary="dodano gitignore">
       <created>1605710816806</created>
@@ -80,7 +97,14 @@
       <option name="project" value="LOCAL" />
       <updated>1609680167432</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="database deleted">
+      <created>1609681583242</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1609681583242</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -103,21 +127,31 @@
     <MESSAGE value="usunięto folder" />
     <MESSAGE value="init commit" />
     <MESSAGE value="author added" />
-    <option name="LAST_COMMIT_MESSAGE" value="author added" />
+    <MESSAGE value="database deleted" />
+    <option name="LAST_COMMIT_MESSAGE" value="database deleted" />
   </component>
   <component name="WindowStateProjectService">
     <state x="137" y="59" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1609677735716">
       <screen x="0" y="40" width="1366" height="728" />
     </state>
     <state x="137" y="59" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.40.1366.728@0.40.1366.728" timestamp="1609677735716" />
-    <state x="275" y="137" key="Vcs.Push.Dialog.v2" timestamp="1609680181465">
+    <state x="1623" y="322" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1609946203657">
+      <screen x="1366" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1623" y="322" key="#com.intellij.fileTypes.FileTypeChooser/0.40.1366.728/1366.0.1920.1040@1366.0.1920.1040" timestamp="1609946203657" />
+    <state x="2106" y="275" key="FileChooserDialogImpl" timestamp="1609945983536">
+      <screen x="1366" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2106" y="275" key="FileChooserDialogImpl/0.40.1366.728/1366.0.1920.1040@1366.0.1920.1040" timestamp="1609945983536" />
+    <state x="275" y="137" key="Vcs.Push.Dialog.v2" timestamp="1609681588703">
       <screen x="0" y="40" width="1366" height="728" />
     </state>
-    <state x="275" y="137" key="Vcs.Push.Dialog.v2/0.40.1366.728@0.40.1366.728" timestamp="1609680181465" />
-    <state x="500" y="318" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1609681447452">
-      <screen x="0" y="40" width="1366" height="728" />
+    <state x="275" y="137" key="Vcs.Push.Dialog.v2/0.40.1366.728@0.40.1366.728" timestamp="1609681588703" />
+    <state x="2069" y="397" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1609933948812">
+      <screen x="1366" y="0" width="1920" height="1040" />
     </state>
-    <state x="500" y="318" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.40.1366.728@0.40.1366.728" timestamp="1609681447452" />
+    <state x="2069" y="397" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.40.1366.728/1366.0.1920.1040@1366.0.1920.1040" timestamp="1609933948812" />
+    <state x="500" y="318" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.40.1366.728@0.40.1366.728" timestamp="1609704133491" />
     <state x="346" y="89" width="672" height="678" key="search.everywhere.popup" timestamp="1609678207107">
       <screen x="0" y="40" width="1366" height="728" />
     </state>

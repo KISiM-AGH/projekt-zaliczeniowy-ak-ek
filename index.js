@@ -7,7 +7,7 @@ app.use(express.json());
 const dbUSER = [];
 
 app.get('/', (req, res) =>{
-    res.send({msg: 'Witam serdecznie ze szkieletu generatora sudoku REST'})
+    res.send({msg: 'Witam serdecznie ze szkieletu generatora sudoku REST, wprowadzam delikatną zmianę'})
 })
 
 app.post('/User',(req, res) =>{
