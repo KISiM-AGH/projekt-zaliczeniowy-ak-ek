@@ -9,10 +9,13 @@
   "private": true,
   "scripts": {
     "start": "node .",
-    "watch": "nodemon --inspect ."
+    "watch": "cross-env PORT=3198 nodemon --inspect ."
   },
   "dependencies": {
-    "express": "^4.17.1"
+    "cross-env": "^7.0.3",
+    "express": "^4.17.1",
+    "knex": "^0.21.15",
+    "objection": "^2.2.4"
   },
   "devDependencies": {
     "nodemon": "^2.0.6"
