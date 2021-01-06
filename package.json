@@ -15,7 +15,9 @@
     "cross-env": "^7.0.3",
     "express": "^4.17.1",
     "knex": "^0.21.15",
-    "objection": "^2.2.4"
+    "mysql": "^2.18.1",
+    "objection": "^2.2.4",
+    "sqlite3": "^5.0.0"
   },
   "devDependencies": {
     "nodemon": "^2.0.6"
