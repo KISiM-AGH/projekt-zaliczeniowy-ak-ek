@@ -20,12 +20,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a58ad7cb-99b2-4dab-b40f-e2dbb2042a81" name="Default Changelist" comment="db connection, knex &amp; controller">
+      <change afterPath="$PROJECT_DIR$/src/api/sudoku/sudoku.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_06_01_2021_16_46__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_06_01_2021_16_46__Default_Changelist_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/knexfile.js" beforeDir="false" afterPath="$PROJECT_DIR$/knexfile.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/api/danelogowania/danelogowania.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/danelogowania/danelogowania.controller.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/api/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/danelogowania.model.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/danelogowania.model.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,12 +51,15 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../book_api_knex_objection" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/api/sudoku" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Aga\WebstormProjects\projekt_git\src\api\sudoku" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Aga\WebstormProjects\projekt_git\src" />
     </key>
@@ -174,14 +175,31 @@
       <screen x="0" y="40" width="1366" height="728" />
     </state>
     <state x="137" y="59" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.40.1366.728@0.40.1366.728" timestamp="1609677735716" />
-    <state x="1623" y="322" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1609946203657">
-      <screen x="1366" y="0" width="1920" height="1040" />
+    <state x="183" y="265" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1610054500437">
+      <screen x="0" y="40" width="1366" height="728" />
     </state>
     <state x="1623" y="322" key="#com.intellij.fileTypes.FileTypeChooser/0.40.1366.728/1366.0.1920.1040@1366.0.1920.1040" timestamp="1609946203657" />
+    <state x="183" y="265" key="#com.intellij.fileTypes.FileTypeChooser/0.40.1366.728@0.40.1366.728" timestamp="1610054500437" />
     <state x="2106" y="275" key="FileChooserDialogImpl" timestamp="1609945983536">
       <screen x="1366" y="0" width="1920" height="1040" />
     </state>
     <state x="2106" y="275" key="FileChooserDialogImpl/0.40.1366.728/1366.0.1920.1040@1366.0.1920.1040" timestamp="1609945983536" />
+    <state width="1345" height="178" key="GridCell.Tab.0.bottom" timestamp="1610054462953">
+      <screen x="0" y="40" width="1366" height="728" />
+    </state>
+    <state width="1345" height="178" key="GridCell.Tab.0.bottom/0.40.1366.728@0.40.1366.728" timestamp="1610054462953" />
+    <state width="1345" height="178" key="GridCell.Tab.0.center" timestamp="1610054462952">
+      <screen x="0" y="40" width="1366" height="728" />
+    </state>
+    <state width="1345" height="178" key="GridCell.Tab.0.center/0.40.1366.728@0.40.1366.728" timestamp="1610054462952" />
+    <state width="1345" height="178" key="GridCell.Tab.0.left" timestamp="1610054462952">
+      <screen x="0" y="40" width="1366" height="728" />
+    </state>
+    <state width="1345" height="178" key="GridCell.Tab.0.left/0.40.1366.728@0.40.1366.728" timestamp="1610054462952" />
+    <state width="1345" height="178" key="GridCell.Tab.0.right" timestamp="1610054462952">
+      <screen x="0" y="40" width="1366" height="728" />
+    </state>
+    <state width="1345" height="178" key="GridCell.Tab.0.right/0.40.1366.728@0.40.1366.728" timestamp="1610054462952" />
     <state x="277" y="57" key="SettingsEditor" timestamp="1610049153819">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
