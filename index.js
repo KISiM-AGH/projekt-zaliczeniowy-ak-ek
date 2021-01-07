@@ -7,13 +7,13 @@ const app = express();
 app.use(express.json());
 app.use('/api', api)
 
-/*
-const dbUSER = [];
+
+
 
 app.get('/', (req, res) =>{
     res.send({msg: 'Witam serdecznie ze szkieletu generatora sudoku REST, wprowadzam delikatną zmianę'})
 })
-
+/*
 app.post('/User',(req, res) =>{
     const {name, surname} = req.body;
     const user = {name, surname};

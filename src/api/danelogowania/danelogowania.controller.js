@@ -11,8 +11,17 @@ router.get('/:id', (req, res) => {
 
 })
 
-router.post('/', (req, res) => {
-
+router.post('/', async (req, res) => {
+    try {
+        const nowedane =  await danelogowania.query().insert({
+            nick: req.body.nick,
+            email: req.body.email,
+            passwd: req.body.passwd
+        });
+        res.send(nowedane);
+    } catch (error) {
+        res.send({msg: "co jest nie tak: " + error})
+    }
 })
 
 router.put('/:id', (req, res) => {

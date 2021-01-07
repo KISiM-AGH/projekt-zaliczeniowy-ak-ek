@@ -11,10 +11,10 @@ class danelogowania extends Model {
         return {
             type: 'object',
             properties: {
-                //id: {type: 'integer'},
-                nick: {type: 'string'},
-                email: {type: 'string'},
-                passwd: {type: 'string'}
+                id: {type: 'integer'},
+                nick: {type: 'string'}
+                //email: {type: 'string'},
+                //passwd: {type: 'string'}
             }
         }
     }
