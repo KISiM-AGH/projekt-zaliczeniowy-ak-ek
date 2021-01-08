@@ -1,4 +1,5 @@
 const express = require('express');
+const api = require('./src/api');
 const api = require('./src/api')
 const objectionErrorHandler = require('./src/middleware/objectionErrorHandler.js')
 
@@ -8,9 +9,6 @@ const app = express();
 app.use(express.json());
 app.use('/api', api);
 app.use(objectionErrorHandler);
-
-
-
 
 app.get('/', (req, res) =>{
     res.send({msg: 'Witam serdecznie ze szkieletu generatora sudoku REST, wprowadzam delikatną zmianę'})
@@ -29,6 +27,11 @@ app.get('/User', (req, res) => {
     res.send(dbUSER);
 })
 */
+app.get('/sudoku', (req, res) => {
+    celu();
+    console.log(sudoku.generate("easy"));
+    res.send(sudoku.generate("easy").toString());
+})
 app.listen(port, '127.0.0.1',() =>{
     console.log(`Server listening on http://127.0.0.1:${port} in ${env} mode`);
 } );
