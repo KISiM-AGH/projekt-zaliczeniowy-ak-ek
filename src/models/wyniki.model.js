@@ -25,3 +25,4 @@ class wyniki extends Model {
         return json;
     }
 }
+module.exports = wyniki

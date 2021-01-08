@@ -19,13 +19,16 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a58ad7cb-99b2-4dab-b40f-e2dbb2042a81" name="Default Changelist" comment="db connection, knex &amp; controller">
+    <list default="true" id="a58ad7cb-99b2-4dab-b40f-e2dbb2042a81" name="Default Changelist" comment="insert">
+      <change afterPath="$PROJECT_DIR$/src/api/wyniki/wyniki.controller.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/exceptions/no-data-found-error.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/middleware/objectionErrorHandler.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/knexfile.js" beforeDir="false" afterPath="$PROJECT_DIR$/knexfile.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/api/danelogowania/danelogowania.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/danelogowania/danelogowania.controller.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/api/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/danelogowania.model.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/danelogowania.model.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/migrations/20210106202927_danelogowania.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/migrations/20210106202927_danelogowania.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/wyniki.model.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/wyniki.model.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,7 +77,7 @@
       <workItem from="1605710724733" duration="1518000" />
       <workItem from="1609676298646" duration="8538000" />
       <workItem from="1609933359339" duration="3052000" />
-      <workItem from="1610041977969" duration="9231000" />
+      <workItem from="1610041977969" duration="17584000" />
     </task>
     <task id="LOCAL-00001" summary="dodano gitignore">
       <created>1605710816806</created>
@@ -139,7 +142,14 @@
       <option name="project" value="LOCAL" />
       <updated>1609972789613</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="insert">
+      <created>1610053525583</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1610053525583</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -167,7 +177,8 @@
     <MESSAGE value="przygotowanie do bazy 2" />
     <MESSAGE value="test commitowania" />
     <MESSAGE value="db connection, knex &amp; controller" />
-    <option name="LAST_COMMIT_MESSAGE" value="db connection, knex &amp; controller" />
+    <MESSAGE value="insert" />
+    <option name="LAST_COMMIT_MESSAGE" value="insert" />
   </component>
   <component name="WindowStateProjectService">
     <state x="137" y="59" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1609677735716">
@@ -186,10 +197,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="277" y="57" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1610049153819" />
-    <state x="309" y="110" key="Vcs.Push.Dialog.v2" timestamp="1609972798786">
+    <state x="309" y="110" key="Vcs.Push.Dialog.v2" timestamp="1610053530295">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="309" y="110" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1609972798786" />
+    <state x="309" y="110" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1610053530295" />
     <state x="275" y="137" key="Vcs.Push.Dialog.v2/0.40.1366.728@0.40.1366.728" timestamp="1609681588703" />
     <state x="2069" y="397" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1609933948812">
       <screen x="1366" y="0" width="1920" height="1040" />

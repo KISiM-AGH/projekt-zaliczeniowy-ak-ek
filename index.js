@@ -1,11 +1,13 @@
 const express = require('express');
 const api = require('./src/api')
+const objectionErrorHandler = require('./src/middleware/objectionErrorHandler.js')
 
 const port = process.env.PORT || 9000;
 const env = process.env.NODE_ENV || 'development';
 const app = express();
 app.use(express.json());
-app.use('/api', api)
+app.use('/api', api);
+app.use(objectionErrorHandler);
 
 
 
