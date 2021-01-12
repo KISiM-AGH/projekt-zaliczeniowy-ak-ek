@@ -2,6 +2,8 @@ const {Router} = require('express')
 const router = new Router();
 const SudokuGenerator = require("js-sudoku-generator").SudokuGenerator;
 
+// ??????? prawdopodobnie przydałoby się tą całą logikę przenieść do jakiejś funkcji a tu zostawić tylko jej wywołanie ???????
+
 router.get('/', (req, res) => {
     SudokuGenerator.generate(1);
     let Board = SudokuGenerator.generatedBoards[0];
