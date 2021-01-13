@@ -1,5 +1,3 @@
-//https://vincit.github.io/objection.js/recipes/error-handling.html#examples
-
 const {
     ValidationError,
     NotFoundError,

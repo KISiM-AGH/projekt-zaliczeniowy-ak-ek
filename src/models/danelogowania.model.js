@@ -14,7 +14,7 @@ class danelogowania extends Model {
             type: 'object',
             properties: {
                 id: {type: 'integer'},
-                nick: {type: 'string'},
+                nick: {type: String},
                 email: {
                     type: String, //or 'string'
                     match: /^\S+@\S+\.\S+$/, //sprawdzanie czy wprowadzony email pasuje do wzoru email
@@ -29,12 +29,12 @@ class danelogowania extends Model {
                     required: true,
                     minlength: 4  // ??????? czy ustawiamy minimalną długość hasła
                     // kb mówi że to w sumie niepotrzebne bo i tak będziemy je haszować ???????
-                },
-                // role w systemie- mówi że ważne ale nie wiem jeszcze czy nam to potrzebne
+                }
+                /*// role w systemie- mówi że ważne ale nie wiem jeszcze czy nam to potrzebne
                 role: {
                     type: String,
                     default: 'user'
-                }
+                }*/
             }
         }
     }

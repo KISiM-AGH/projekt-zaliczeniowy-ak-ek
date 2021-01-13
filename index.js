@@ -9,26 +9,10 @@ app.use(express.json());
 app.use('/api', api);
 app.use(objectionErrorHandler);
 
-app.get('/', (req, res) =>{
-    let result = 'Witam serdecznie ze szkieletu generatora sudoku REST, wprowadzam delikatną zmianę <br> Tutaj kolejna linia tekstu';
-    //res.send( {result} );
-    //res.set('Content-Type', 'text/html');
-    res.send(result);
-})
-/*
-app.post('/User',(req, res) =>{
-    const {name, surname} = req.body;
-    const user = {name, surname};
-    //walidacja danych
-    //dbUSER atrapa bazy danych
-    dbUSER.push(user);
-    res.status(201).send(user);
+app.get('/', async (req, res) =>{
+    res.send({msg: 'Witaj w generatorze sudoku!'})
 })
 
-app.get('/User', (req, res) => {
-    res.send(dbUSER);
-})
-*/
 app.listen(port, '127.0.0.1',() =>{
     console.log(`Server listening on http://127.0.0.1:${port} in ${env} mode`);
 } );

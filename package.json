@@ -19,9 +19,11 @@
     "knex": "^0.21.15",
     "mysql": "^2.18.1",
     "objection": "^2.2.4",
-    "sqlite3": "^5.0.0"
+    "sqlite3": "^5.0.0",
+    "webpack": "^5.12.0"
   },
   "devDependencies": {
-    "nodemon": "^2.0.6"
+    "nodemon": "^2.0.6",
+    "webpack-cli": "^4.3.1"
   }
 }
