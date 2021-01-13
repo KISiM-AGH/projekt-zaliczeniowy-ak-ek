@@ -2,11 +2,11 @@
 projekt-zaliczeniowy-ak-ek created by GitHub Classroom
 
 todo :
-1. query do SQL # prawie done
-2. grafika sudoku # w sumie to done
-3. generator sudoku # prawie done
+1. query do SQL # half done
+2. grafika sudoku # done
+3. generator sudoku # done
 4. routing # done
 
-5. sprawdzanie sudoku po stronie serwera
-6. logowanie # next
-7. opcjonalnie hasze do sudoku
+5. sprawdzanie sudoku po stronie serwera # jako drugie
+6. logowanie JWT # priorytet
+7. porzadek i errory
