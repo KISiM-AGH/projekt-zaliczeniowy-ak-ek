@@ -1,60 +1,32 @@
 const {Router} = require('express')
 const wyniki = require('../../models/wyniki.model')
 const NoDataFoundError = require("../../exceptions/no-data-found-error");
+const asyncHandler = require("../../middleware/asyncHandler");
+const getScoreByPlayerId = require("./getScoreByPlayerId");
+const addScore = require("./addScore");
+const updateScore = require("./updateScore");
+const deleteScore = require("./deleteScore");
 const router = new Router();
 const zalogowanyGracz = 1;
+
 router.get('/', (req, res) => {
-    const dane = wyniki.query();
-    res.send(dane);
+    res.status(200).send("Witaj w panelu wyników!");
 })
 
-router.get('/:id', async (req, res) => {
-    try {
-        const id = req.params.id;
-        const dane = await wyniki.query().findById(id);
-        if(!dane) throw new NoDataFoundError();
-        res.send(dane);
-    } catch (error) {
-        res.send({msg: "co jest nie tak: " + error})
-    }
-})
+router.get('/:id', asyncHandler(async (req, res) => {
+    await getScoreByPlayerId(req, res, wyniki);
+}))
 
-router.post('/', async (req, res) => {
-    try {
-        const today = new Date();
-        const timestamp = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate()+" "+today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
-        console.log(timestamp);
-        const nowedane =  await wyniki.query().insert({
-            gracz: zalogowanyGracz,
-            poziomtrudnosci: req.body.poziomtrudnosci,
-            data: timestamp,
-            wynik: req.body.wynik
-        });
-        res.status(201).send(nowedane);
-    } catch (error) {
-        res.send({msg: "co jest nie tak: " + error})
-    }
-})
+router.post('/', asyncHandler(async (req, res) => {
+    await addScore(req, res, wyniki, zalogowanyGracz);
+}))
 
-router.put('/:id', async (req, res) => {
-    try {
-        const id = req.params.id;
-        const nowedane =  await wyniki.query().patchAndFetchById(id, req.body);
-        res.status(201).send(nowedane);
-    } catch (error) {
-        res.send({msg: "co jest nie tak: " + error})
-    }
-})
+router.put('/:id', asyncHandler(async (req, res) => {
+    await updateScore(req, res, wyniki);
+}))
 
 router.delete('/:id', async (req, res) => {
-    try{
-        const id = req.params.id;
-        const dane = await wyniki.query().deleteById(id);
-        if(dane == 0) throw new NoDataFoundError();
-        res.status(204).send("usunieto "+dane);
-    } catch (error) {
-        res.send({msg: "co jest nie tak: " + error})
-    }
+    await deleteScore(req, res, wyniki);
 })
 
 module.exports = router;

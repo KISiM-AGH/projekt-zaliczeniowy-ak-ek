@@ -19,21 +19,15 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a58ad7cb-99b2-4dab-b40f-e2dbb2042a81" name="Default Changelist" comment="hash, fixes">
-      <change afterPath="$PROJECT_DIR$/src/api/danelogowania/addUser.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/api/danelogowania/authenticateEmail.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/api/danelogowania/deleteUser.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/api/danelogowania/editUser.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/api/danelogowania/getUser.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/api/danelogowania/shortData.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/api/danelogowania/tryPassword.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/api/danelogowania/welcomeScreen.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/middleware/asyncHandler.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/middleware/errorHandler.js" afterDir="false" />
+    <list default="true" id="a58ad7cb-99b2-4dab-b40f-e2dbb2042a81" name="Default Changelist" comment="ordnung w logowaniu">
+      <change afterPath="$PROJECT_DIR$/src/api/wyniki/addScore.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/api/wyniki/deleteScore.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/api/wyniki/getScoreByPlayerId.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/api/wyniki/updateScore.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/api/danelogowania/EmailAuthentication.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/danelogowania/authenticateNick.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/api/danelogowania/danelogowania.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/danelogowania/danelogowania.controller.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/danelogowania/welcomeScreen.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/wyniki/wyniki.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/wyniki/wyniki.controller.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -92,7 +86,7 @@
       <workItem from="1610107169008" duration="3301000" />
       <workItem from="1610489466655" duration="1005000" />
       <workItem from="1610534781983" duration="20390000" />
-      <workItem from="1610733887451" duration="3796000" />
+      <workItem from="1610733887451" duration="5980000" />
     </task>
     <task id="LOCAL-00001" summary="dodano gitignore">
       <created>1605710816806</created>
@@ -178,7 +172,14 @@
       <option name="project" value="LOCAL" />
       <updated>1610565938432</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="ordnung w logowaniu">
+      <created>1610737952771</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1610737952771</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -209,7 +210,8 @@
     <MESSAGE value="insert" />
     <MESSAGE value="get all, get by id, delete, error handling not finished" />
     <MESSAGE value="sudoku validation, fixes to clean up sudoku code" />
-    <option name="LAST_COMMIT_MESSAGE" value="sudoku validation, fixes to clean up sudoku code" />
+    <MESSAGE value="ordnung w logowaniu" />
+    <option name="LAST_COMMIT_MESSAGE" value="ordnung w logowaniu" />
   </component>
   <component name="WindowStateProjectService">
     <state x="342" y="14" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1610735892840">
@@ -221,6 +223,10 @@
       <screen x="1366" y="0" width="1920" height="1040" />
     </state>
     <state x="1623" y="322" key="#com.intellij.fileTypes.FileTypeChooser/0.40.1366.728/1366.0.1920.1040@1366.0.1920.1040" timestamp="1609946203657" />
+    <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1610741124175">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1610741124175" />
     <state x="2106" y="275" key="FileChooserDialogImpl" timestamp="1609945983536">
       <screen x="1366" y="0" width="1920" height="1040" />
     </state>
@@ -301,10 +307,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="277" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1610548906707" />
-    <state x="309" y="110" key="Vcs.Push.Dialog.v2" timestamp="1610565944669">
+    <state x="309" y="110" key="Vcs.Push.Dialog.v2" timestamp="1610737957668">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="309" y="110" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1610565944669" />
+    <state x="309" y="110" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1610737957668" />
     <state x="275" y="137" key="Vcs.Push.Dialog.v2/0.40.1366.728@0.40.1366.728" timestamp="1609681588703" />
     <state x="2069" y="397" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1609933948812">
       <screen x="1366" y="0" width="1920" height="1040" />

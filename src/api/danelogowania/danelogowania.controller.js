@@ -3,10 +3,7 @@ const authenticateNick = require("./authenticateNick");
 
 const {Router} = require('express')
 const danelogowania = require('../../models/danelogowania.model')
-const NoDataFoundError = require("../../exceptions/no-data-found-error");
-const TakenError = require("../../exceptions/taken-error");
 const asyncHandler = require("../../middleware/asyncHandler");
-const welcomeScreen = require("./welcomeScreen");
 const getUser = require("./getUser");
 const addUser = require("./addUser");
 const tryPassword = require('./tryPassword')
@@ -18,7 +15,7 @@ const router = new Router();
 
 
 router.get('/', asyncHandler ( (req, res) => {
-    welcomeScreen(req, res, danelogowania);
+    res.status(200).send("Witaj w panelu danych logowania!")
 }))
 
 router.get('/:id',  asyncHandler(async ( req, res) => {
