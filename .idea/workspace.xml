@@ -19,18 +19,15 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a58ad7cb-99b2-4dab-b40f-e2dbb2042a81" name="Default Changelist" comment="get all, get by id, delete, error handling not finished">
-      <change afterPath="$PROJECT_DIR$/src/api/danelogowania/EmailAuthentication.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/exceptions/taken-error.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_06_01_2021_16_46__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_06_01_2021_16_46__Default_Changelist_.xml" afterDir="false" />
+    <list default="true" id="a58ad7cb-99b2-4dab-b40f-e2dbb2042a81" name="Default Changelist" comment="sudoku validation, fixes to clean up sudoku code">
+      <change afterPath="$PROJECT_DIR$/src/api/sudoku/browserPrettyPrintSudoku.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/api/sudoku/generateSudoku.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/api/sudoku/sudokuValidation.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/sudoku.model.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_06_01_2021_16_46_[Default_Changelist]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_06_01_2021_16_46__Default_Changelist_.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/api/danelogowania/danelogowania.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/danelogowania/danelogowania.controller.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/middleware/objectionErrorHandler.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/middleware/objectionErrorHandler.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/danelogowania.model.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/danelogowania.model.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/sudoku/sudoku.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/sudoku/sudoku.controller.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -197,7 +194,8 @@
     <MESSAGE value="db connection, knex &amp; controller" />
     <MESSAGE value="insert" />
     <MESSAGE value="get all, get by id, delete, error handling not finished" />
-    <option name="LAST_COMMIT_MESSAGE" value="get all, get by id, delete, error handling not finished" />
+    <MESSAGE value="sudoku validation, fixes to clean up sudoku code" />
+    <option name="LAST_COMMIT_MESSAGE" value="sudoku validation, fixes to clean up sudoku code" />
   </component>
   <component name="WindowStateProjectService">
     <state x="342" y="14" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1610555693660">
@@ -303,17 +301,5 @@
       <screen x="0" y="40" width="1366" height="728" />
     </state>
     <state x="346" y="89" width="672" height="678" key="search.everywhere.popup/0.40.1366.728@0.40.1366.728" timestamp="1609678207107" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/src/api/danelogowania/danelogowania.controller.js</url>
-          <line>45</line>
-          <properties lambdaOrdinal="-1" />
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
