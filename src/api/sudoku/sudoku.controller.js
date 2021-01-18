@@ -3,10 +3,12 @@ const router = new Router();
 const browserPrettyPrintSudoku = require('./browserPrettyPrintSudoku');
 const generateSudoku = require('./generateSudoku');
 const validSudoku = require('./sudokuValidation')
+const {auth} = require("../../middleware/auth");
 // JWT od 58:00 minuty nagrania
 // skończyłam na 01:22:20
 //generate Sudoku
-router.get('/', (req, res) => {
+router.get('/', auth({required: true}), (req, res) => {
+    console.log(res.user);
     res.send(browserPrettyPrintSudoku(generateSudoku()));
 });
 

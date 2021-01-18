@@ -19,15 +19,11 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a58ad7cb-99b2-4dab-b40f-e2dbb2042a81" name="Default Changelist" comment="sudoku validation, fixes to clean up sudoku code">
-      <change afterPath="$PROJECT_DIR$/config.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/service/jwt.js" afterDir="false" />
+    <list default="true" id="a58ad7cb-99b2-4dab-b40f-e2dbb2042a81" name="Default Changelist" comment="added introduction to JWT">
+      <change afterPath="$PROJECT_DIR$/src/exceptions/unauthorized-exception.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/middleware/auth.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/api/danelogowania/tryPassword.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/danelogowania/tryPassword.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/api/sudoku/sudoku.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/sudoku/sudoku.controller.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,7 +83,8 @@
       <workItem from="1610489466655" duration="1005000" />
       <workItem from="1610534781983" duration="20390000" />
       <workItem from="1610733887451" duration="5980000" />
-      <workItem from="1610903746491" duration="4233000" />
+      <workItem from="1610903746491" duration="4477000" />
+      <workItem from="1610961037976" duration="5477000" />
     </task>
     <task id="LOCAL-00001" summary="dodano gitignore">
       <created>1605710816806</created>
@@ -180,7 +177,14 @@
       <option name="project" value="LOCAL" />
       <updated>1610737952771</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="added introduction to JWT">
+      <created>1610928916258</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1610928916258</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -212,7 +216,8 @@
     <MESSAGE value="get all, get by id, delete, error handling not finished" />
     <MESSAGE value="sudoku validation, fixes to clean up sudoku code" />
     <MESSAGE value="ordnung w logowaniu" />
-    <option name="LAST_COMMIT_MESSAGE" value="ordnung w logowaniu" />
+    <MESSAGE value="added introduction to JWT" />
+    <option name="LAST_COMMIT_MESSAGE" value="added introduction to JWT" />
   </component>
   <component name="WindowStateProjectService">
     <state x="342" y="14" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1610735892840">
@@ -308,10 +313,11 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="277" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1610548906707" />
-    <state x="309" y="110" key="Vcs.Push.Dialog.v2" timestamp="1610737957668">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state x="275" y="137" key="Vcs.Push.Dialog.v2" timestamp="1610928939886">
+      <screen x="0" y="40" width="1366" height="728" />
     </state>
     <state x="309" y="110" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1610737957668" />
+    <state x="275" y="137" key="Vcs.Push.Dialog.v2/0.40.1366.728/-1920.-307.1920.1080@0.40.1366.728" timestamp="1610928939886" />
     <state x="275" y="137" key="Vcs.Push.Dialog.v2/0.40.1366.728@0.40.1366.728" timestamp="1609681588703" />
     <state x="2069" y="397" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1609933948812">
       <screen x="1366" y="0" width="1920" height="1040" />
