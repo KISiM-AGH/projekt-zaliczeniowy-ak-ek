@@ -19,15 +19,15 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a58ad7cb-99b2-4dab-b40f-e2dbb2042a81" name="Default Changelist" comment="ordnung w logowaniu">
-      <change afterPath="$PROJECT_DIR$/src/api/wyniki/addScore.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/api/wyniki/deleteScore.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/api/wyniki/getScoreByPlayerId.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/api/wyniki/updateScore.js" afterDir="false" />
+    <list default="true" id="a58ad7cb-99b2-4dab-b40f-e2dbb2042a81" name="Default Changelist" comment="sudoku validation, fixes to clean up sudoku code">
+      <change afterPath="$PROJECT_DIR$/config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/service/jwt.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/api/danelogowania/danelogowania.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/danelogowania/danelogowania.controller.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/api/danelogowania/welcomeScreen.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/api/wyniki/wyniki.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/wyniki/wyniki.controller.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/danelogowania/tryPassword.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/danelogowania/tryPassword.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/sudoku/sudoku.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/sudoku/sudoku.controller.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,6 +87,7 @@
       <workItem from="1610489466655" duration="1005000" />
       <workItem from="1610534781983" duration="20390000" />
       <workItem from="1610733887451" duration="5980000" />
+      <workItem from="1610903746491" duration="4233000" />
     </task>
     <task id="LOCAL-00001" summary="dodano gitignore">
       <created>1605710816806</created>

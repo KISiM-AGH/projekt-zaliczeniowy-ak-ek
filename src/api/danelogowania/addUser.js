@@ -2,6 +2,8 @@ const argon2 = require('argon2')
 const shortData = require('./shortData');
 const authenticateEmail = require('./authenticateEmail');
 const authenticateNick = require('./authenticateNick');
+const { sign } = require("../../service/jwt");
+const config = require("../../../config");
 
 
 async function addUser(req, res, danelogowania) {
@@ -12,6 +14,8 @@ async function addUser(req, res, danelogowania) {
         email: req.body.email,
         passwd: await argon2.hash(req.body.passwd)
     });
+    const token = sign(nowedane[0].id);
+    res.cookie('auth', token, config.cookiesOptions);
     res.status(201).send(shortData(nowedane));
 }
 
