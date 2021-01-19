@@ -1,14 +1,13 @@
 
 
 # Generator sudoku
-// nie wiem co tu napisać żeby nie było tak pusto xd
 
-Aplikacja przeglądarkowa napisana przez Emila Kobyłeckiego i Agnieszkę Kowalczyk w ramach zaliczenia przedmiotu Inżyniera Internetu.
+Aplikacja przeglądarkowa napisana przez Emila Kobyłeckiego i Agnieszkę Kowalczyk w ramach zaliczenia przedmiotu Inżynieria Internetu.
 
 
 ## 1. Ogólny opis aplikacji
 
-Aplikacja służy do generoanwia sudoku. Na odpowiednie żądanie użytkownika, wyświetlana jest tablica sudoku z brakującymi polami do uzupełnienia, przedstawiona w czytelny sposób w przeglądarce:
+Aplikacja służy do generowania sudoku i obsługi powiązanych zapytań. Na odpowiednie żądanie użytkownika, wyświetlana jest tablica sudoku z brakującymi polami do uzupełnienia, przedstawiona w czytelny sposób w przeglądarce:
 
 ```
 Sudoku to solve
@@ -24,29 +23,31 @@ Sudoku to solve
 | 3 9 _ | _ _ 4 | 2 _ 8 |
 | _ _ _ | _ _ 3 | _ 9 _ |
 | 2 _ _ | 6 5 9 | _ 1 _ |
+
 ```
 
-Jest możliwość wyboru jednego spośród trzech poziomów trudności łamigłówki- łatwego, średniego lub trudnego. Ponadto aplikacja oferuje możliwość założenia konta użytkowanika, który po rejestracji uzyskuje możliwość zapisywania wyników czy przeglądania archiwalnych. Konto użytkownika jest w pełni obsłużone- można się na nie powrtównie zalogować, wyświetlać oraz edytować wprowadzone dane czy trwale usunąć założone konto.
+Jest możliwość wyboru jednego spośród trzech poziomów trudności łamigłówki - łatwego, średniego lub trudnego. Ponadto aplikacja oferuje możliwość założenia konta użytkowanika, który po rejestracji uzyskuje możliwość zapisywania wyników czy przeglądania archiwalnych. Konto użytkownika jest w pełni obsłużone- można się na nie powtórnie zalogować, wyświetlać oraz edytować wprowadzone dane czy trwale usunąć założone konto.
 
 
 ## 2. Wykorzystane technologie i narzędzia
 
-Aplikacja została napisana zgodnie z założeniami API Rest oraz zaimplementowana w języku JavaScript. Zarządzaniem wszelikmi zależnościami w projekcie zajął się menadżer pakietów- Yarn, natomiast narzędziem zapewaniającym przenośność kodu pomiędzy rożnymi platformami i odpowiednio przetwarzającym zmienne środowiskowe był cross-env. Wykorzystano bazę danych MySQL umieszczoną na lokalnym serwerze uruchamianą przy pomocy pakietu XAMPP. Baza składa się z dwóch prostycz tabel- jednej przechowującej dane dotyczące użytkowników oraz drugiej przechowującej wyniki. Tabele połączone są relacją jeden do wielu (jeden użytkownik może mieć zapisane wiele wyników).
+Aplikacja została napisana zgodnie z założeniami API Rest oraz zaimplementowana w języku JavaScript. Zarządzaniem wszelkimi zależnościami w projekcie zajął się menadżer pakietów 
+- Yarn, natomiast narzędziem zapewaniającym przenośność kodu pomiędzy rożnymi platformami i odpowiednio przetwarzającym zmienne środowiskowe był cross-env. Wykorzystano bazę danych MySQL umieszczoną na lokalnym serwerze uruchamianą przy pomocy pakietu XAMPP. Baza składa się z dwóch prostych tabel- jednej przechowującej dane dotyczące użytkowników oraz drugiej przechowującej wyniki. Tabele połączone są relacją jeden do wielu (jeden użytkownik może mieć zapisane wiele wyników).
 
 ![Screenshot](diagram.png)
 
-Dla łatwiejszej obsługi bazy danych w kodzie, wykorzystano narzędzie wspierające budowanie zapytań oraz migracji- Knex. Wsparciem przy rzutowaniu obiektów obsługiwanych przez program na relacyjną bazę danych był Objection.js- odpowiadał za mapowanie obiektowo- realcyjne. Ważnym elementem umożliwającym logowanie użytkownika oraz przetwarzanie różnych rządań pochodzących od jednego klienta był JWT- Json Web Token. Bezpieczne haszowanie haseł wprowadzanych do bazy danych zrealizowano dzięki algorytmowi Agron2.
+Dla łatwiejszej obsługi bazy danych w kodzie, wykorzystano narzędzie wspierające budowanie zapytań oraz migracji- Knex. Wsparciem przy rzutowaniu obiektów obsługiwanych przez program na relacyjną bazę danych był Objection.js- odpowiadał za mapowanie obiektowo - relacyjne. Ważnym elementem umożliwającym logowanie użytkownika oraz przetwarzanie różnych żądań pochodzących od użytkownika był JWT - Json Web Token. Bezpieczne haszowanie haseł wprowadzanych do bazy danych zrealizowano dzięki algorytmowi Argon2.
 
 
 ## 3. Funkcjonalności
 
 Strona powitalna nawigująca po reszcie funkcjinalności dostępna jest pod adresem: ``` http://localhost:3198/ ```.
 
-### Sudoku
+### 3.1 Sudoku
 
-Do wygenerowania sudoku, służy żądanie  GET pod adresem: ``` /api/sudoku/'nr' ```, gdzie pod 'nr' należy podstawić jedną z liczb w zależności od wybranego poziomu trudności (0- łatwy, 1- średni, 2- trudny).
+Do wygenerowania sudoku służy żądanie GET pod adresem: ``` /api/sudoku/'nr' ```, gdzie pod 'nr' należy podstawić jedną z liczb w zależności od wybranego poziomu trudności (0- łatwy, 1- średni, 2- trudny).
 
-Aby wysłać rozwiązaną łamigłówkę do sprawdzenia, nalezy jako zalogowany użytkownik wysłąć żądanie POST pod adres:  ``` /api/sudoku ```. Liczby należy wpisywać kolejnemy wierszami w tablicach w formacie JSON:
+Aby wysłać rozwiązaną łamigłówkę do sprawdzenia, nalezy jako zalogowany użytkownik wysłać żądanie POST pod adres:  ``` /api/sudoku ```. Liczby należy wpisywać kolejnymi wierszami w tablicach w formacie JSON:
 
 ```
 {
