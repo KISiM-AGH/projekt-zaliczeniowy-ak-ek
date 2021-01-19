@@ -15,8 +15,8 @@ app.use(errorHandler);
 
 app.get('/', async (req, res) =>{
     res.send({msg: 'Witaj w generatorze sudoku!'})
-})
+});
 
 app.listen(port, '127.0.0.1',() =>{
     console.log(`Server listening on http://127.0.0.1:${port} in ${env} mode`);
-} );
+});

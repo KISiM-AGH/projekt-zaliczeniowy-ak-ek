@@ -17,7 +17,8 @@ const auth = ({required} = {}) => (req, res, next) => {
     const user_id = {
         _id: decodedToken.sub
     };
-    req.user = user_id;
+    req.user = user_id._id;
+    console.log({msg: "user id = "+user_id._id});
     next();
 };
 

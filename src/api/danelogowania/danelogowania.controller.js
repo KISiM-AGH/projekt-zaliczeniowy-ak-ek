@@ -9,45 +9,39 @@ const addUser = require("./addUser");
 const tryPassword = require('./tryPassword')
 const editUser = require("./editUser");
 const deleteUser = require("./deleteUser");
+const {auth} = require("../../middleware/auth");
 
 const router = new Router();
 
-
-
+//welcome screen
 router.get('/', asyncHandler ( (req, res) => {
-    res.status(200).send("Witaj w panelu danych logowania!")
+    res.status(200).send("Welcome to danelogowania control panel!")
 }))
 
-router.get('/:id',  asyncHandler(async ( req, res) => {
+//getting user information via id
+router.get('/:id', auth({required: true}),  asyncHandler(async ( req, res) => {
     await getUser(req, res, danelogowania);
 }))
 
+//adding a new user
 router.post('/', asyncHandler( async (req, res) => {
     await addUser(req, res, danelogowania);
 }))
 
+//checking input password with database password via nick
 router.post('/login', asyncHandler(async (req, res) => {
         await tryPassword(req, res, danelogowania);
 }))
 
-router.put('/:id', asyncHandler(async (req, res) => {
+//updating user via id
+router.put('/:id', auth({required: true}), asyncHandler(async (req, res) => {
         await editUser(req, res, danelogowania);
 }))
 
-router.delete('/:id', asyncHandler(async (req, res) => {
+//deleting user via id
+//poprawić
+router.delete('/', auth({required: true}), asyncHandler(async (req, res) => {
         await deleteUser(req, res, danelogowania);
 }))
 
 module.exports = router;
-
-
-
-
-
-
-
-
-
-
-
-

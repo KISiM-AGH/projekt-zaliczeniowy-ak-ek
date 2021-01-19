@@ -11,6 +11,7 @@ function sudokuValidation(arrivedSudoku){
     sudokuArray[7] = arrivedSudoku.row8;
     sudokuArray[8] = arrivedSudoku.row9;
     if(valid(sudokuArray)){
+        //dodać zapisanie wyniku!
         return "Correct!";
     } else return "Not correct!";
 }
@@ -22,14 +23,14 @@ function valid(arraySolution) {
             if (value) {
                 // Check the line
                 for (let x2 = 0; x2 < 9; ++x2) {
-                    if (x2 != x && arraySolution[y][x2] == value) {
+                    if (x2 !== x && arraySolution[y][x2] === value) {
                         return false;
                     }
                 }
 
                 // Check the column
                 for (let y2 = 0; y2 < 9; ++y2) {
-                    if (y2 != y && arraySolution[y2][x] == value) {
+                    if (y2 !== y && arraySolution[y2][x] === value) {
                         return false;
                     }
                 }
@@ -39,7 +40,7 @@ function valid(arraySolution) {
                 for (let y2 = startY; y2 < startY + 3; ++y2) {
                     let startX = Math.floor(x/3)*3;
                     for (let x2 = startX; x2 < startX + 3; ++x2) {
-                        if ((x2 != x || y2 != y) && arraySolution[y2][x2] == value) {
+                        if ((x2 !== x || y2 !== y) && arraySolution[y2][x2] === value) {
                             return false;
                         }
                     }
