@@ -43,7 +43,11 @@ Jest możliwość wyboru jednego spośród trzech poziomów trudności łamigł�
 
 ## 2. Wykorzystane technologie i narzędzia
 
-Aplikacja została napisana zgodnie z założeniami API Rest oraz zaimplementowana w języku JavaScript. Zarządzaniem wszelikmi zależnościami w projekcie zajął się menadżer pakietów- Yarn, natomiast narzędziem zapewaniającym przenośność kodu pomiędzy rożnymi platformami i odpowiednio przetwarzającym zmienne środowiskowe był cross-env. Wykorzystano bazę danych MySQL umieszczoną na lokalnym serwerze uruchamianą przy pomocy pakietu XAMPP. Dla łatwiejszej obsługi bazy danych w kodzie, wykorzystano narzędzie wspierające budowanie zapytań oraz migracji- Knex. Wsparciem przy rzutowaniu obiektów obsługiwanych przez program na relacyjną bazę danych był Objection.js- odpowiadał za mapowanie obiektowo- realcyjne. Ważnym elementem umożliwającym logowanie użytkownika oraz przetwarzanie różnych rządań pochodzących od jednego klienta był JWT- Json Web Token. Bezpieczne haszowanie haseł wprowadzanych do bazy danych zrealizowano dzięki algorytmowi Agron2.
+Aplikacja została napisana zgodnie z założeniami API Rest oraz zaimplementowana w języku JavaScript. Zarządzaniem wszelikmi zależnościami w projekcie zajął się menadżer pakietów- Yarn, natomiast narzędziem zapewaniającym przenośność kodu pomiędzy rożnymi platformami i odpowiednio przetwarzającym zmienne środowiskowe był cross-env. Wykorzystano bazę danych MySQL umieszczoną na lokalnym serwerze uruchamianą przy pomocy pakietu XAMPP. Baza składa się z dwóch prostycz tabel- jednej przechowującej dane dotyczące użytkowników oraz drugiej przechowującej wyniki.
+
+![Screenshot](diagram.png)
+
+Dla łatwiejszej obsługi bazy danych w kodzie, wykorzystano narzędzie wspierające budowanie zapytań oraz migracji- Knex. Wsparciem przy rzutowaniu obiektów obsługiwanych przez program na relacyjną bazę danych był Objection.js- odpowiadał za mapowanie obiektowo- realcyjne. Ważnym elementem umożliwającym logowanie użytkownika oraz przetwarzanie różnych rządań pochodzących od jednego klienta był JWT- Json Web Token. Bezpieczne haszowanie haseł wprowadzanych do bazy danych zrealizowano dzięki algorytmowi Agron2.
 
 
 ## 3. Funkcjonalności
