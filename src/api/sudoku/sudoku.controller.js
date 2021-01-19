@@ -9,7 +9,7 @@ const addScore = require("../wyniki/addScore");
 const {auth} = require("../../middleware/auth");
 
 //generating Sudoku of passed difficulty, throws InvalidDataPassed
-router.get('/', auth({required: true}), (req, res) => {
+router.get('/:poziomtrudnosci', auth({required: true}), (req, res) => {
     res.send(browserPrettyPrintSudoku(generateSudoku(req, res)));
 });
 
