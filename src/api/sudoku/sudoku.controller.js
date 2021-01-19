@@ -15,7 +15,7 @@ router.get('/:poziomtrudnosci', auth({required: true}), (req, res) => {
 
 //checking if Sudoku is solved correctly, adding score to database if solved correctly
 router.post('/',  auth({required: true}), asyncHandler(async (req, res) =>{
-    const outcome = validateSudoku(req);
+    const outcome = validateSudoku(req, res);
     if(outcome === true)
         await addScore(req, res, wyniki);
     else

@@ -26,9 +26,12 @@ router.post('/', asyncHandler( async (req, res) => {
     await addUser(req, res, danelogowania);
 }))
 
-//checking input password with database password via nick, triggers authorization
+//checking input password with database password via nick, triggers authorization, throws NoDataFound | InvalidDataPassed
 router.get('/login', asyncHandler(async (req, res) => {
-        await login(req, res, danelogowania);
+        if( await login(req, res, danelogowania))
+            res.status(200).send("Authorization passed!");
+        else
+            res.status(400).send("Authorization failed! Check your nick and password.");
 }))
 
 //checking input password with database password via nick, triggers authorization

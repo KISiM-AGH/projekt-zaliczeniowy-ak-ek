@@ -27,7 +27,7 @@ async function addScore(req, res, wyniki) {
     });
     const dane = await wyniki.query().select("wynik", "poziomtrudnosci").where("gracz", req.user._id).orderBy("wynik");
     const amount = dane.length;
-    if(amount > 6) {
+    if(amount > 5) {
         await wyniki.query().delete().where("wynik", dane[amount-1].wynik);
         console.log('deleted some')
     }

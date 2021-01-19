@@ -1,6 +1,6 @@
 const config = require('../../../config');
 
-function validateSudoku(req){
+function validateSudoku(req, res){
     if(req.body.row1 === "sudokuTest")
         return true;
     if(req.body.row2 === undefined)
@@ -21,6 +21,9 @@ function validateSudoku(req){
         controlSumLocal += sudokuArray[i][i];
     }
     if(valid(sudokuArray) && parseInt(req.cookies.controlSum) === controlSumLocal ) {
+        res.cookie('sudokuStartTime', 'no-data', config.makeCookieExpire);
+        res.cookie('sudokuLevel', 'no-data', config.makeCookieExpire);
+        res.cookie('controlSum', 'no-data', config.makeCookieExpire);
         return true;
     } else return false;
 }
