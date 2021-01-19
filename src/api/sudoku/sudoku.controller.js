@@ -1,20 +1,25 @@
 const {Router} = require('express')
 const router = new Router();
+const wyniki = require('../../models/wyniki.model')
 const browserPrettyPrintSudoku = require('./browserPrettyPrintSudoku');
 const generateSudoku = require('./generateSudoku');
-const validSudoku = require('./sudokuValidation')
+const validateSudoku = require('./validateSudoku')
 const asyncHandler = require("../../middleware/asyncHandler");
+const addScore = require("../wyniki/addScore");
 const {auth} = require("../../middleware/auth");
-// JWT od 58:00 minuty nagrania
-// skończyłam na 01:22:20
-//generate Sudoku
+
+//generating Sudoku of passed difficulty, throws InvalidDataPassed
 router.get('/', auth({required: true}), (req, res) => {
-    res.send(browserPrettyPrintSudoku(generateSudoku()));
+    res.send(browserPrettyPrintSudoku(generateSudoku(req, res)));
 });
 
-//check if Sudoku is solved correctly
-router.post('/',  (req, res) =>{
-    res.status(200).send(validSudoku(req.body));
-});
+//checking if Sudoku is solved correctly, adding score to database if solved correctly
+router.post('/',  auth({required: true}), asyncHandler(async (req, res) =>{
+    const outcome = validateSudoku(req);
+    if(outcome === true)
+        await addScore(req, res, wyniki);
+    else
+        res.status(200).send('You have failed to solve the puzzle!')
+}));
 
 module.exports = router;

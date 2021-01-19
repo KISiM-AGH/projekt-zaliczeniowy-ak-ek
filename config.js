@@ -7,6 +7,13 @@ module.exports = {
         httpOnly: true,
         signed: false,      //podpisane w celu weryfikacji
 
+    },
+    makeCookieExpire: {
+        secure: process.env.NODE_ENV === 'production',
+        sameSite: process.env.NODE_ENV === 'production' ? 'Strict' : 'None',
+        maxAge: 0,         //czas przechowywania przez przeglądarkę
+        httpOnly: true,
+        signed: false,      //podpisane w celu weryfikacji
     }
 
 

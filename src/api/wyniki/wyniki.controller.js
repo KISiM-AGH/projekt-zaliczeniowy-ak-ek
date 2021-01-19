@@ -1,33 +1,22 @@
 const {Router} = require('express')
 const wyniki = require('../../models/wyniki.model')
 const asyncHandler = require("../../middleware/asyncHandler");
-const getScoreByPlayerId = require("./getScoreByPlayerId");
+const getScoreByPlayerId = require("./getScores");
 const addScore = require("./addScore");
 const updateScore = require("./updateScore");
 const deleteScore = require("./deleteScore");
+const getScores = require("./getScores");
+const {auth} = require("../../middleware/auth");
 const router = new Router();
-//do usuniecia
-const zalogowanyGracz = 1;
 
+//welcome screen
 router.get('/', (req, res) => {
-    res.status(200).send("Witaj w panelu wyników!");
+    res.status(200).send("Welcome to wyniki panel!");
 })
 
-//do poprawy
-//auth
-router.get('/:id', asyncHandler(async (req, res) => {
-    await getScoreByPlayerId(req, res, wyniki);
-}))
-
-//auth
-//through sudoku.validate
-router.post('/', asyncHandler(async (req, res) => {
-    await addScore(req, res, wyniki, zalogowanyGracz);
-}))
-
-//auth
-router.put('/:id', asyncHandler(async (req, res) => {
-    await updateScore(req, res, wyniki);
+//getting all scores for current user, requires authorization, throws NoScores
+router.get('/myscores', auth({required: true}), asyncHandler(async (req, res) => {
+    await getScores(req, res, wyniki);
 }))
 
 //auth

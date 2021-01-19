@@ -1,8 +1,7 @@
 const jwt = require('jsonwebtoken');
 const config = require('../../config');
-const UnauthorizedException = require("../exceptions/unauthorized-exception");
+const UnauthorizedException = require("../exceptions/no-authorization-error");
 
-// funkcja opakowująca- zwraca funkcję ??
 const auth = ({required} = {}) => (req, res, next) => {
     const token = req.cookies.auth;
     if(required && !token) throw new UnauthorizedException();
@@ -14,11 +13,9 @@ const auth = ({required} = {}) => (req, res, next) => {
         throw new UnauthorizedException('Wrong token');
     };
 
-    const user_id = {
+    req.user = {
         _id: decodedToken.sub
     };
-    req.user = user_id._id;
-    console.log({msg: "user id = "+user_id._id});
     next();
 };
 

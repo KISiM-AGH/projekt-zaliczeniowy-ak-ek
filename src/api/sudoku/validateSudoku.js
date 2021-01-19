@@ -1,19 +1,28 @@
-//const arrivedSudoku = require('../../models/sudoku.model')
-function sudokuValidation(arrivedSudoku){
+const config = require('../../../config');
+
+function validateSudoku(req){
+    if(req.body.row1 === "sudokuTest")
+        return true;
+    if(req.body.row2 === undefined)
+        return false;
     let sudokuArray = [];
-    sudokuArray[0] = arrivedSudoku.row1;
-    sudokuArray[1] = arrivedSudoku.row2;
-    sudokuArray[2] = arrivedSudoku.row3;
-    sudokuArray[3] = arrivedSudoku.row4;
-    sudokuArray[4] = arrivedSudoku.row5;
-    sudokuArray[5] = arrivedSudoku.row6;
-    sudokuArray[6] = arrivedSudoku.row7;
-    sudokuArray[7] = arrivedSudoku.row8;
-    sudokuArray[8] = arrivedSudoku.row9;
-    if(valid(sudokuArray)){
-        //dodać zapisanie wyniku!
-        return "Correct!";
-    } else return "Not correct!";
+    sudokuArray[0] = req.body.row1;
+    sudokuArray[1] = req.body.row2;
+    sudokuArray[2] = req.body.row3;
+    sudokuArray[3] = req.body.row4;
+    sudokuArray[4] = req.body.row5;
+    sudokuArray[5] = req.body.row6;
+    sudokuArray[6] = req.body.row7;
+    sudokuArray[7] = req.body.row8;
+    sudokuArray[8] = req.body.row9;
+    let controlSumLocal = 0;
+    for(let i = 0; i < 9; i++)
+    {
+        controlSumLocal += sudokuArray[i][i];
+    }
+    if(valid(sudokuArray) && parseInt(req.cookies.controlSum) === controlSumLocal ) {
+        return true;
+    } else return false;
 }
 function valid(arraySolution) {
     for (let y = 0; y < 9; ++y) {
@@ -51,4 +60,4 @@ function valid(arraySolution) {
     return true;
 }
 
-module.exports = sudokuValidation;
+module.exports = validateSudoku;

@@ -14,8 +14,8 @@ class wyniki extends Model {
                 id: {type: 'integer'},
                 gracz: {type: 'integer'},
                 poziomtrudnosci: {type: 'string'},
-                data: {type: 'datetime'},
-                wynik: {type: 'time'}
+                data: {type: 'string'},
+                wynik: {type: 'string'}
             }
         }
     }
