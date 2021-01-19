@@ -1,15 +1,3 @@
-todo :
-1. query do SQL # done
-2. grafika sudoku # done
-3. generator sudoku # done
-4. routing # done
-5. sprawdzanie sudoku po stronie serwera # done
-6. logowanie JWT # done
-
-7. readme - aga
-8. uzupełnienie kodu - emil
-
-
 
 
 # Generator sudoku
