@@ -43,7 +43,7 @@ Jest możliwość wyboru jednego spośród trzech poziomów trudności łamigł�
 
 ## 2. Wykorzystane technologie i narzędzia
 
-Aplikacja została napisana zgodnie z założeniami API Rest oraz zaimplementowana w języku JavaScript. Zarządzaniem wszelikmi zależnościami w projekcie zajął się menadżer pakietów- Yarn, natomiast narzędziem zapewaniającym przenośność kodu pomiędzy rożnymi platformami i odpowiednio przetwarzającym zmienne środowiskowe był cross-env. Wykorzystano bazę danych MySQL umieszczoną na lokalnym serwerze uruchamianą przy pomocy pakietu XAMPP. Baza składa się z dwóch prostycz tabel- jednej przechowującej dane dotyczące użytkowników oraz drugiej przechowującej wyniki.
+Aplikacja została napisana zgodnie z założeniami API Rest oraz zaimplementowana w języku JavaScript. Zarządzaniem wszelikmi zależnościami w projekcie zajął się menadżer pakietów- Yarn, natomiast narzędziem zapewaniającym przenośność kodu pomiędzy rożnymi platformami i odpowiednio przetwarzającym zmienne środowiskowe był cross-env. Wykorzystano bazę danych MySQL umieszczoną na lokalnym serwerze uruchamianą przy pomocy pakietu XAMPP. Baza składa się z dwóch prostycz tabel- jednej przechowującej dane dotyczące użytkowników oraz drugiej przechowującej wyniki. Tabele połączone są relacją jeden do wielu (jeden użytkownik może mieć zapisane wiele wyników).
 
 ![Screenshot](diagram.png)
 
@@ -56,7 +56,7 @@ Strona powitalna nawigująca po reszcie funkcjinalności dostępna jest pod adre
 
 ### Sudoku
 
-Do wygenerowania sudoku, służy żądanie  GET pod adresem: ``` /api/sudoku/'nr' ```, gdzie pod 'nr' należy podstawić jedną z liczb w zależności od wybranego poziomu trudności (1- łatwy, 2- średni, 3- trudny).
+Do wygenerowania sudoku, służy żądanie  GET pod adresem: ``` /api/sudoku/'nr' ```, gdzie pod 'nr' należy podstawić jedną z liczb w zależności od wybranego poziomu trudności (0- łatwy, 1- średni, 2- trudny).
 
 Aby wysłać rozwiązaną łamigłówkę do sprawdzenia, nalezy jako zalogowany użytkownik wysłąć żądanie POST pod adres:  ``` /api/sudoku ```. Liczby należy wpisywać kolejnemy wierszami w tablicach w formacie JSON:
 
