@@ -14,7 +14,7 @@ app.use(objectionErrorHandler);
 app.use(errorHandler);
 
 app.get('/', async (req, res) =>{
-    res.send({msg: 'Witaj w generatorze sudoku!'})
+    res.send('Witaj w generatorze sudoku!')
 });
 
 app.listen(port, '127.0.0.1',() =>{
