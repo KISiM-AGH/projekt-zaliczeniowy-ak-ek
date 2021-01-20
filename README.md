@@ -31,8 +31,7 @@ Jest możliwość wyboru jednego spośród trzech poziomów trudności łamigł�
 
 ## 2. Wykorzystane technologie i narzędzia
 
-Aplikacja została napisana zgodnie z założeniami API Rest oraz zaimplementowana w języku JavaScript. Zarządzaniem wszelkimi zależnościami w projekcie zajął się menadżer pakietów 
-- Yarn, natomiast narzędziem zapewaniającym przenośność kodu pomiędzy rożnymi platformami i odpowiednio przetwarzającym zmienne środowiskowe był cross-env. Wykorzystano bazę danych MySQL umieszczoną na lokalnym serwerze uruchamianą przy pomocy pakietu XAMPP. Baza składa się z dwóch prostych tabel- jednej przechowującej dane dotyczące użytkowników oraz drugiej przechowującej wyniki. Tabele połączone są relacją jeden do wielu (jeden użytkownik może mieć zapisane wiele wyników).
+Aplikacja została napisana zgodnie z założeniami API Rest oraz zaimplementowana w języku JavaScript. Zarządzaniem wszelkimi zależnościami w projekcie zajął się menadżer pakietów - Yarn, natomiast narzędziem zapewaniającym przenośność kodu pomiędzy rożnymi platformami i odpowiednio przetwarzającym zmienne środowiskowe był cross-env. Wykorzystano bazę danych MySQL umieszczoną na lokalnym serwerze uruchamianą przy pomocy pakietu XAMPP. Baza składa się z dwóch prostych tabel- jednej przechowującej dane dotyczące użytkowników oraz drugiej przechowującej wyniki. Tabele połączone są relacją jeden do wielu (jeden użytkownik może mieć zapisane wiele wyników).
 
 ![Screenshot](diagram.png)
 
@@ -65,7 +64,7 @@ Aby wysłać rozwiązaną łamigłówkę do sprawdzenia, nalezy jako zalogowany 
 
 Jeżeli odpowiedź została przesłana w prawidłowy sposób, użytkownik otrzyma stosowny komunikat "Prawidłowo rozwiązałeś sudoku!" lub "Nieprawidłowo rozwiązane sudoku :(" wraz z statusem 200 oznaczający że żądanie zostało przetworzone bez zakłóceń.
 
-### Konto użytkownika
+### 3.2 Konto użytkownika
 
 W celu rejestracji konta użytkownika należy wysłać żądanie POST pod adres ``` /api/danelogowania ```, wysyłając dane użtkownika w formacie JSON:
 
@@ -109,6 +108,6 @@ Użytkownik może wylogować się z konta za pomocą żądania GET pod adresem `
 W przypadku, gdy użytkownik chce usunąć swoje konto, może to wykonać poprzez wysłania żądania DELETE pod adres ``` /api/danelogowania ```. Operację należy potwierdzić hasłem. W przypadku pomyślnego zakończneia akcji, użytkownik otrzyma kumunikat "Usunieto użytkownika" wraz ze statusem 200.
 
 
-### Wyniki
+### 3.3 Wyniki
 
 Wyniki są automatycznie dodawane do konta użytkownika, w momencie przesyłania przez zalogowanego użytkownika rozwiązania łamigłówki. Aby wyświetlić archiwalne wyniki, zalogowany gracz może wysłać żądanie GET pod adresem ``` /api/wyniki ```. Przechowywanych jest 10 najlepszych rezultatów.
