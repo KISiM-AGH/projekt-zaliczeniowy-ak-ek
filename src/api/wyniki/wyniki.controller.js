@@ -11,7 +11,7 @@ const router = new Router();
 
 //welcome screen
 router.get('/', (req, res) => {
-    res.status(200).send("Welcome to wyniki panel!");
+    res.status(200).send(msg());
 })
 
 //getting all scores for current user, requires authorization, throws NoScores
@@ -20,3 +20,21 @@ router.get('/myscores', auth({required: true}), asyncHandler(async (req, res) =>
 }))
 
 module.exports = router;
+
+
+
+
+
+
+
+
+
+
+
+
+
+function msg(){
+    let msg = '<br>' + '<h1> Welcome to wyniki panel! </h1>' + '<br>';
+    msg = msg + 'Results ' + '<button> <a href="http://127.0.0.1:3198/api/wyniki/myscores">click!</a> </button>' + '<br>' + '<br>';
+    return msg;
+}
