@@ -19,14 +19,11 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a58ad7cb-99b2-4dab-b40f-e2dbb2042a81" name="Default Changelist" comment="addScore fixed, added max of 10 scores per player">
+    <list default="true" id="a58ad7cb-99b2-4dab-b40f-e2dbb2042a81" name="Default Changelist" comment="deleteUser now deletes all scores of the user, login fixed, testing tomorrow">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/danelogowania/addUser.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/danelogowania/addUser.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/api/danelogowania/danelogowania.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/danelogowania/danelogowania.controller.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/api/danelogowania/deleteUser.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/danelogowania/deleteUser.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/api/danelogowania/login.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/danelogowania/login.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/api/sudoku/sudoku.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/sudoku/sudoku.controller.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/api/sudoku/validateSudoku.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/sudoku/validateSudoku.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/api/wyniki/addScore.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/wyniki/addScore.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/danelogowania/editUser.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/danelogowania/editUser.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,7 +88,8 @@
       <workItem from="1610991285447" duration="519000" />
       <workItem from="1611000399487" duration="664000" />
       <workItem from="1611073177383" duration="7469000" />
-      <workItem from="1611082360847" duration="14479000" />
+      <workItem from="1611082360847" duration="14779000" />
+      <workItem from="1611139801621" duration="1501000" />
     </task>
     <task id="LOCAL-00001" summary="dodano gitignore">
       <created>1605710816806</created>
@@ -219,7 +217,14 @@
       <option name="project" value="LOCAL" />
       <updated>1611096295034</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="deleteUser now deletes all scores of the user, login fixed, testing tomorrow">
+      <created>1611097878620</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1611097878620</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -256,7 +261,8 @@
     <MESSAGE value="minor index.js change" />
     <MESSAGE value="ordnung, addScore now triggered by sudokuValidation, removed not needed functions of wyniki, added proper sudoku validation and wynik data automation" />
     <MESSAGE value="addScore fixed, added max of 10 scores per player" />
-    <option name="LAST_COMMIT_MESSAGE" value="addScore fixed, added max of 10 scores per player" />
+    <MESSAGE value="deleteUser now deletes all scores of the user, login fixed, testing tomorrow" />
+    <option name="LAST_COMMIT_MESSAGE" value="deleteUser now deletes all scores of the user, login fixed, testing tomorrow" />
   </component>
   <component name="WindowStateProjectService">
     <state x="342" y="14" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1610735892840">
@@ -352,10 +358,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="277" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1610548906707" />
-    <state x="309" y="110" key="Vcs.Push.Dialog.v2" timestamp="1611096298475">
+    <state x="309" y="110" key="Vcs.Push.Dialog.v2" timestamp="1611097880385">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="309" y="110" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1611096298475" />
+    <state x="309" y="110" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1611097880385" />
     <state x="275" y="137" key="Vcs.Push.Dialog.v2/0.40.1366.728/-1920.-307.1920.1080@0.40.1366.728" timestamp="1610928939886" />
     <state x="275" y="137" key="Vcs.Push.Dialog.v2/0.40.1366.728@0.40.1366.728" timestamp="1609681588703" />
     <state x="2069" y="397" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1609933948812">

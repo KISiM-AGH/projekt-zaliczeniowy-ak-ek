@@ -4,8 +4,11 @@ const authenticateEmail = require('./authenticateEmail');
 const authenticateNick = require('./authenticateNick');
 const sign = require('../../service/jwt');
 const config = require("../../../config");
+const InvalidDataPassedException = require("../../exceptions/invalid-data-passed-exception");
 
 async function addUser(req, res, danelogowania) {
+    if(req.body.nick === undefined || req.body.email === undefined || req.body.passwd === undefined)
+        throw new InvalidDataPassedException();
     //check if email/nick are not taken, throw Taken
     await authenticateEmail(req.body.email, danelogowania);
     await authenticateNick(req.body.nick, danelogowania);
