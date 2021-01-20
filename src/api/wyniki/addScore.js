@@ -1,3 +1,5 @@
+const config = require("../../../config");
+
 async function addScore(req, res, wyniki) {
     const today = new Date();
     const timestamp = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate()+" "+today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
@@ -30,6 +32,11 @@ async function addScore(req, res, wyniki) {
     if(amount > 5) {
         await wyniki.query().delete().where("wynik", dane[amount-1].wynik);
         console.log('deleted some')
+    }
+    if( req.body.row1 !== "sudokuTest" ) {
+        res.cookie('sudokuStartTime', 'no-data', config.makeCookieExpire);
+        res.cookie('sudokuLevel', 'no-data', config.makeCookieExpire);
+        res.cookie('controlSum', 'no-data', config.makeCookieExpire);
     }
     res.status(201).send("You have solved the puzzle! Your score is : "+'<br>'+nowedane.wynik);
 }
