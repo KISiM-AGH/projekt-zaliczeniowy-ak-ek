@@ -21,9 +21,6 @@ function validateSudoku(req, res){
         controlSumLocal += sudokuArray[i][i];
     }
     if(valid(sudokuArray) && parseInt(req.cookies.controlSum) === controlSumLocal ) {
-        res.cookie('sudokuStartTime', 'no-data', config.makeCookieExpire);
-        res.cookie('sudokuLevel', 'no-data', config.makeCookieExpire);
-        res.cookie('controlSum', 'no-data', config.makeCookieExpire);
         return true;
     } else return false;
 }
