@@ -19,9 +19,4 @@ router.get('/myscores', auth({required: true}), asyncHandler(async (req, res) =>
     await getScores(req, res, wyniki);
 }))
 
-//auth
-router.delete('/:id', async (req, res) => {
-    await deleteScore(req, res, wyniki);
-})
-
 module.exports = router;
