@@ -7,24 +7,7 @@ Aplikacja przeglądarkowa napisana przez Emila Kobyłeckiego i Agnieszkę Kowalc
 
 ## 1. Ogólny opis aplikacji
 
-Aplikacja służy do generowania sudoku i obsługi powiązanych zapytań. Na odpowiednie żądanie użytkownika, wyświetlana jest tablica sudoku z brakującymi polami do uzupełnienia, przedstawiona w czytelny sposób w przeglądarce:
-
-```
-Sudoku to solve
-
-| _ 4 _ | 7 9 5 | _ 2 3 |
-| _ 3 2 | 4 _ 8 | 9 _ 5 |
-| 5 _ 9 | 3 _ _ | _ 4 1 |
-
-| 4 5 _ | _ 8 6 | 7 3 _ |
-| 9 6 _ | _ 4 _ | _ _ 2 |
-| _ 2 _ | _ 3 1 | _ _ 4 |
-
-| 3 9 _ | _ _ 4 | 2 _ 8 |
-| _ _ _ | _ _ 3 | _ 9 _ |
-| 2 _ _ | 6 5 9 | _ 1 _ |
-
-```
+Aplikacja służy do generowania sudoku i obsługi powiązanych zapytań. Na odpowiednie żądanie użytkownika, wyświetlana jest tablica sudoku z brakującymi polami do uzupełnienia.
 
 Jest możliwość wyboru jednego spośród trzech poziomów trudności łamigłówki - łatwego, średniego lub trudnego. Ponadto aplikacja oferuje możliwość założenia konta użytkowanika, który po rejestracji uzyskuje możliwość zapisywania wyników czy przeglądania archiwalnych. Konto użytkownika jest w pełni obsłużone- można się na nie powtórnie zalogować, wyświetlać oraz edytować wprowadzone dane czy trwale usunąć założone konto.
 
